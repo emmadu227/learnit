@@ -1,0 +1,627 @@
+/* 
+ * Settings
+ * var...............saves all variables
+ */
+/*@import "var","compass/reset";*/
+/* line 10, ../sass/index.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 11, ../sass/index.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 12, ../sass/index.scss */
+body, html, #wrap, .page1, .page2, .page3, .page4, .page5, .page6 {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 13, ../sass/index.scss */
+body, html {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 14, ../sass/index.scss */
+#wrap {
+  position: absolute;
+}
+
+/* line 15, ../sass/index.scss */
+.page1, .page2, .page3, .page4, .page5, .page6 {
+  position: relative;
+}
+
+/* .page1,.page2,.page3,.page4,.page5 {position:absolute;height: 100%; width: 100%;}*/
+/* line 17, ../sass/index.scss */
+body {
+  font: normal 100% Arial,Microsoft YaHei,SimSun;
+}
+
+/*.page3{position:relative;background: url("../images/box2.jpg") no-repeat; background-size:100% 100%}*/
+/* line 20, ../sass/index.scss */
+.head1 {
+  height: 7%;
+  width: 100%;
+  position: relative;
+  padding: 0 0.5em;
+  background-color: white;
+}
+/* line 28, ../sass/index.scss */
+.headl1, .headr1 {
+  position: absolute;
+}
+
+/* line 29, ../sass/index.scss */
+.headl1 {
+  color: #00296c;
+  font-size: 4vw;
+  left: 3%;
+  top: 18%;
+}
+
+/* line 30, ../sass/index.scss */
+.headr1 {
+  color: grey;
+  font-size: 3.5vw;
+  right: 6%;
+  top: 22%;
+}
+
+/* line 34, ../sass/index.scss */
+.head2 {
+  height: 7%;
+  width: 100%;
+  position: relative;
+  padding: 0 0.5em;
+  background-color: #00296c;
+}
+/* line 41, ../sass/index.scss */
+.headl2, .headr2 {
+  position: absolute;
+  color: white;
+}
+
+/* line 42, ../sass/index.scss */
+.headl2 {
+  font-size: 4vw;
+  left: 3%;
+  top: 18%;
+}
+
+/* line 43, ../sass/index.scss */
+.headr2 {
+  font-size: 3.5vw;
+  right: 6%;
+  top: 22%;
+}
+
+/* line 48, ../sass/index.scss */
+.p1img {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  height: 60%;
+}
+
+/* line 56, ../sass/index.scss */
+.art {
+  position: absolute;
+  top: 67%;
+  width: 100%;
+  height: 33%;
+  background-color: #00296c;
+}
+/* line 63, ../sass/index.scss */
+.art .con {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  margin: 2.5% auto;
+  padding: 0 3%;
+}
+/* line 70, ../sass/index.scss */
+.art .con .t1 {
+  font-size: 4vw;
+  color: yellow;
+}
+/* line 74, ../sass/index.scss */
+.art .con .p1 {
+  font-size: 3.5vw;
+  color: white;
+}
+
+/* line 83, ../sass/index.scss */
+.slide {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  width: 6%;
+  height: 3%;
+  margin-left: -3%;
+}
+/* line 90, ../sass/index.scss */
+.slide img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+/* line 93, ../sass/index.scss */
+.title {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  width: 83%;
+  height: auto;
+}
+
+/* line 102, ../sass/index.scss */
+.scroll {
+  position: relative;
+  margin: 13% auto;
+  left: 0;
+  width: 90.5%;
+  height: 70%;
+  overflow: hidden;
+}
+/* line 109, ../sass/index.scss */
+.scroll .content {
+  width: 200%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 110, ../sass/index.scss */
+.scroll .content li {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+/* line 119, ../sass/index.scss */
+.subtit {
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  background-color: #00296c;
+  padding-top: 2%;
+}
+
+/* line 132, ../sass/index.scss */
+.item1, .item2, .item3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 1%;
+}
+/* line 138, ../sass/index.scss */
+.item1 span, .item2 span, .item3 span {
+  float: left;
+  height: 100%;
+  background-color: lightgrey;
+}
+/* line 143, ../sass/index.scss */
+.item1 .cur, .item2 .cur, .item3 .cur {
+  background-color: #00296c;
+}
+
+/* line 147, ../sass/index.scss */
+.item1 {
+  top: 93%;
+  width: 54%;
+}
+/* line 147, ../sass/index.scss */
+.item1 span {
+  margin-left: 8%;
+  width: 40%;
+}
+
+/* line 148, ../sass/index.scss */
+.item2 {
+  top: 83%;
+  width: 54%;
+}
+/* line 148, ../sass/index.scss */
+.item2 span {
+  margin-left: 8%;
+  width: 40%;
+}
+
+/* line 149, ../sass/index.scss */
+.item3 {
+  top: 85%;
+  width: 70%;
+}
+/* line 149, ../sass/index.scss */
+.item3 span {
+  margin-left: 3%;
+  width: 30%;
+}
+
+/* line 152, ../sass/index.scss */
+.s2 p {
+  font-size: 3.5vw;
+  color: grey;
+  top: 12%;
+  position: absolute;
+}
+/* line 157, ../sass/index.scss */
+.s2 .p2_2 {
+  position: absolute;
+  width: 49%;
+  height: 63%;
+  top: 37%;
+}
+/* line 157, ../sass/index.scss */
+.s2 .p2_3 {
+  position: absolute;
+  width: 49%;
+  height: 63%;
+  top: 37%;
+}
+/* line 157, ../sass/index.scss */
+.s2 .p2_4 {
+  position: absolute;
+  width: 49%;
+  height: 63%;
+  top: 37%;
+}
+/* line 157, ../sass/index.scss */
+.s2 .p2_5 {
+  position: absolute;
+  width: 49%;
+  height: 63%;
+  top: 37%;
+}
+/* line 160, ../sass/index.scss */
+.s2 .p2_2 {
+  left: 2%;
+}
+/* line 161, ../sass/index.scss */
+.s2 .p2_3 {
+  left: 52%;
+}
+/* line 162, ../sass/index.scss */
+.s2 .p2_4 {
+  left: 102%;
+}
+/* line 163, ../sass/index.scss */
+.s2 .p2_5 {
+  left: 152%;
+}
+
+/* line 168, ../sass/index.scss */
+.s3 .content li {
+  height: 88%;
+  background-color: #f7f7f7;
+}
+/* line 169, ../sass/index.scss */
+.s3 p {
+  color: #4c4c4c;
+  position: absolute;
+  width: 64%;
+  left: 35%;
+}
+/* line 172, ../sass/index.scss */
+.s3 .name {
+  top: 5%;
+  font-size: 4vw;
+  font-weight: bold;
+}
+/* line 173, ../sass/index.scss */
+.s3 .intro {
+  top: 11%;
+  font-size: 3.5vw;
+  line-height: 3.8vw;
+}
+/* line 177, ../sass/index.scss */
+.s3 .p3_2 {
+  position: absolute;
+  width: 28%;
+  height: auto;
+  top: 3%;
+  left: 4%;
+}
+/* line 177, ../sass/index.scss */
+.s3 .p3_3 {
+  position: absolute;
+  width: 28%;
+  height: auto;
+  top: 3%;
+  left: 4%;
+}
+/* line 181, ../sass/index.scss */
+.s3 .p3_4 {
+  position: absolute;
+  width: 93%;
+  height: 60%;
+  top: 40%;
+  margin-left: 4%;
+}
+/* line 181, ../sass/index.scss */
+.s3 .p3_5 {
+  position: absolute;
+  width: 93%;
+  height: 60%;
+  top: 40%;
+  margin-left: 4%;
+}
+
+/* line 186, ../sass/index.scss */
+.s4 .content {
+  width: 300%;
+}
+/* line 190, ../sass/index.scss */
+.s4 .p4_1 {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  top: 0;
+  left: 3%;
+}
+/* line 193, ../sass/index.scss */
+.s4 .p4_2 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 3%;
+}
+/* line 196, ../sass/index.scss */
+.s4 .p4_3 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 34%;
+}
+/* line 199, ../sass/index.scss */
+.s4 .p4_4 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 23%;
+  left: 3%;
+}
+/* line 202, ../sass/index.scss */
+.s4 .p4_5 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 23%;
+  left: 34%;
+}
+/* line 205, ../sass/index.scss */
+.s4 .p4_6 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 64%;
+  left: 3%;
+}
+/* line 190, ../sass/index.scss */
+.s4 .p4_7 {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  top: 0;
+  left: 3%;
+}
+/* line 208, ../sass/index.scss */
+.s4 .p4_7 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 64%;
+  left: 34%;
+}
+/* line 193, ../sass/index.scss */
+.s4 .p4_8 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 3%;
+}
+/* line 196, ../sass/index.scss */
+.s4 .p4_9 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 34%;
+}
+/* line 199, ../sass/index.scss */
+.s4 .p4_10 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 23%;
+  left: 3%;
+}
+/* line 202, ../sass/index.scss */
+.s4 .p4_11 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 23%;
+  left: 34%;
+}
+/* line 205, ../sass/index.scss */
+.s4 .p4_12 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 64%;
+  left: 3%;
+}
+/* line 208, ../sass/index.scss */
+.s4 .p4_13 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 64%;
+  left: 34%;
+}
+/* line 190, ../sass/index.scss */
+.s4 .p4_14 {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  top: 0;
+  left: 3%;
+}
+/* line 193, ../sass/index.scss */
+.s4 .p4_16 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 3%;
+}
+/* line 196, ../sass/index.scss */
+.s4 .p4_18 {
+  position: absolute;
+  width: 29%;
+  height: 8%;
+  top: 10%;
+  left: 34%;
+}
+/* line 199, ../sass/index.scss */
+.s4 .p4_20 {
+  position: absolute;
+  width: 29%;
+  height: auto;
+  top: 23%;
+  left: 3%;
+}
+/* line 190, ../sass/index.scss */
+.s4 .p4_21 {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  top: 0;
+  left: 3%;
+}
+
+/* line 214, ../sass/index.scss */
+.page5 .con {
+  position: absolute;
+  width: 96%;
+  height: 90%;
+  top: 20%;
+  left: 2%;
+}
+/* line 216, ../sass/index.scss */
+.page5 .con img {
+  position: absolute;
+}
+/* line 217, ../sass/index.scss */
+.page5 .con .p5_1 {
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+/* line 218, ../sass/index.scss */
+.page5 .con .p5_2 {
+  width: 100%;
+  height: auto;
+  top: 12.5%;
+}
+/* line 219, ../sass/index.scss */
+.page5 .con .p5_3 {
+  width: 46%;
+  height: auto;
+  top: 50%;
+  left: 2%;
+}
+/* line 220, ../sass/index.scss */
+.page5 .con .p5_4 {
+  width: 45%;
+  height: auto;
+  top: 50%;
+  left: 51%;
+}
+/* line 221, ../sass/index.scss */
+.page5 .con .p5_5 {
+  width: 47%;
+  height: auto;
+  top: 55%;
+  left: 2%;
+}
+/* line 222, ../sass/index.scss */
+.page5 .con .p5_6 {
+  width: 47%;
+  height: auto;
+  top: 55%;
+  left: 50%;
+}
+
+/* line 225, ../sass/index.scss */
+.s6 {
+  position: relative;
+  margin: 1% auto;
+  top: 12%;
+  width: 90.5%;
+  height: 70%;
+  overflow: hidden;
+}
+/* line 232, ../sass/index.scss */
+.s6 .content {
+  width: 300%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 233, ../sass/index.scss */
+.s6 .content li {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 50%;
+}
+/* line 239, ../sass/index.scss */
+.s6 .content li img {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 2%;
+  left: 12%;
+}
+/* line 241, ../sass/index.scss */
+.s6 .intro {
+  position: absolute;
+  width: 43%;
+  height: 13%;
+  left: 12%;
+  top: 43%;
+  background-color: #f7f7f7;
+}
+/* line 244, ../sass/index.scss */
+.s6 .intro h2 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #00296c;
+}
+/* line 245, ../sass/index.scss */
+.s6 .intro p {
+  font-size: 3vw;
+  color: grey;
+}

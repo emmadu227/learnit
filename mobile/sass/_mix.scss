@@ -1,0 +1,5 @@
+@mixin imgSize($width: 49%,$height: 63%,$top:37%){
+	width: $width;
+	height: $height;
+	top:$top;
+}

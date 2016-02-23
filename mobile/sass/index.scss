@@ -1,0 +1,247 @@
+/* 
+ * Settings
+ * var...............saves all variables
+ */
+
+
+
+ /*@import "var","compass/reset";*/
+ @import "mix";
+ *{margin: 0;padding: 0;border: 0;}
+ ul li{list-style: none}
+ body,html, #wrap,.page1,.page2,.page3,.page4,.page5,.page6{height: 100%; width: 100%;}
+ body,html{position:relative;overflow: hidden;}
+ #wrap{position: absolute;}
+ .page1,.page2,.page3,.page4,.page5,.page6{position: relative;}
+/* .page1,.page2,.page3,.page4,.page5 {position:absolute;height: 100%; width: 100%;}*/
+ body{ font:normal 100% Arial,Microsoft YaHei,SimSun}
+/*.page3{position:relative;background: url("../images/box2.jpg") no-repeat; background-size:100% 100%}*/
+
+ .head1{
+
+ 	height:7% ;
+ 	width:100%;
+ 	position: relative;
+ 	padding: 0 0.5em;
+	background-color: white;
+ 	@at-root{
+ 	    .headl1, .headr1{position:absolute; }
+ 		.headl1{color: #00296c;font-size:4vw; left:3%; top: 18%}
+ 		.headr1{color: grey;font-size:3.5vw; right:6%; top: 22%}
+ 	}
+ }
+
+ .head2{
+ 	height:7% ;
+ 	width:100%;
+ 	position: relative;
+ 	padding: 0 0.5em;
+	background-color: #00296c;
+ 	@at-root{
+ 	    .headl2, .headr2{position:absolute;color: white;}
+ 		.headl2{font-size:4vw; left:3%; top: 18%}
+ 		.headr2{font-size:3.5vw; right:6%; top: 22%}
+ 	}
+ }
+
+
+ .p1img{
+ 	position:absolute;
+ 	top:7%; 
+ 	width: 100%;
+ 	height: 60%; 
+ }
+
+
+ .art{
+ 	position:absolute;
+ 	top:67%; 
+ 	width: 100%;
+ 	height: 33%;
+ 	background-color:#00296c;
+
+      .con{
+         position: absolute; 
+         width: 90%;
+         height: 80%;
+         margin: 2.5% auto;
+         padding: 0 3%;
+
+         .t1{
+         	font-size: 4vw;
+         	color:yellow;
+         }
+         .p1{
+         	font-size: 3.5vw;
+         	color:white;
+         }
+
+
+     }
+ }
+ 
+ .slide{
+ 	position:absolute;
+ 	bottom: 1%;
+ 	left: 50%;
+ 	width: 6%;
+ 	height:3%;
+ 	margin-left: -3%;
+ 	img{position:absolute;left:0;right:0;margin:auto;width: 80%;height: auto;}
+ }
+
+ .title{
+ 	position: absolute;
+ 	top:10%;
+ 	left:3%;
+ 	width: 83%;
+ 	height: auto;	
+
+ }
+
+ .scroll{
+ 	position: relative;
+ 	margin: 13% auto;
+ 	left:0;
+ 	width: 90.5%;
+ 	height: 70%;
+ 	overflow: hidden;
+ 	.content{width: 200%; position: absolute; height: 100%;top:0;left: 0}
+ 	.content li{
+ 		float: left;
+ 		overflow: hidden;
+ 		position: relative;
+ 		height: 100%;
+ 		width: 50%;
+
+ 	}
+ 	@at-root{
+ 		.subtit{
+ 			position: absolute;
+ 			width: 100%;
+ 			height: 8%;
+ 			text-align: center;
+ 			font-size: 3vw;
+ 			color:white;
+ 			background-color: #00296c;
+ 			padding-top: 2%;
+ 		}
+ 	}
+
+ }
+.item1,.item2,.item3{
+	position: absolute;
+ 		left: 0;
+ 		right: 0;
+ 		margin: auto;
+ 		height: 1%;		
+ 		span{
+ 			float: left;
+ 			height: 100%;
+ 			background-color: lightgrey;
+ 		}
+ 		.cur{background-color:#00296c; }
+
+}
+
+.item1{top: 93%;width: 54%;span{margin-left: 8%;width: 40%;}}
+.item2{top: 83%;width: 54%;span{margin-left: 8%;width: 40%;}}
+.item3{top: 85%;width: 70%;span{margin-left: 3%;width: 30%;}}
+
+ .s2{
+ 	p{
+		font-size: 3.5vw;color:grey;top:12%;position: absolute;
+ 	}
+
+ 	@for $i from 2 through 5{
+ 		.p2_#{$i} {position: absolute; @include imgSize;}
+ 	}
+
+ 	.p2_2{left:2%;}
+ 	.p2_3{left:52%;}
+ 	.p2_4{left:102%;}
+ 	.p2_5{left:152%;}
+ }
+
+ .s3{
+
+ 	.content li{height:88%;background-color: #f7f7f7;}
+ 	 p{
+		color:#4c4c4c;position: absolute;width: 64%;left:35%;
+ 	}
+ 	.name{top:5%;font-size: 4vw;font-weight: bold;}
+ 	.intro{top:11%;font-size: 3.5vw;line-height: 3.8vw;}
+
+
+ 	@for $i from 2 through 3{
+ 		.p3_#{$i}{position: absolute;@include imgSize(28%,auto,3%);left: 4%}
+ 	}
+
+ 	 @for $i from 4 through 5{
+ 		.p3_#{$i}{position: absolute;@include imgSize(93%,60%,40%);margin-left: 4%}
+ 	}
+ }
+
+  .s4{
+  	 	.content{width: 300%;}
+
+    @for $i from 1 through 21{
+    	@if $i ==1 or $i%7 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(60%,7%,0);left: 3%}
+ 		}
+ 		@if $i==2 or $i%8 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,8%,10%);left: 3%;}
+ 		}
+ 	 	@if $i==3 or $i%9 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,8%,10%);left: 34%;}
+ 		}
+ 		@if $i==4 or $i%10 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,auto,23%);left: 3%;}
+ 		}
+ 		@if $i==5 or $i%11 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,auto,23%);left: 34%;}
+ 		}
+ 		@if $i==6 or $i%12 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,auto,64%);left: 3%;}
+ 		}
+ 		@if $i==7 or $i%13 ==0{
+ 		.p4_#{$i} {position: absolute; @include imgSize(29%,auto,64%);left: 34%;}
+ 		}
+    }
+ 	
+
+ }
+ .page5 .con{
+ 	position: absolute;width: 96%;height: 90%;top: 20%;left: 2%;
+ 	img{position: absolute;}
+ 	.p5_1{@include imgSize(100%,auto,0)}
+ 	.p5_2{@include imgSize(100%,auto,12.5%)}
+ 	.p5_3{@include imgSize(46%,auto,50%);left: 2%}
+ 	.p5_4{@include imgSize(45%,auto,50%);left: 51%}
+ 	.p5_5{@include imgSize(47%,auto,55%);left: 2%}
+ 	.p5_6{@include imgSize(47%,auto,55%);left: 50%}
+ }
+
+.s6{
+	position: relative;
+ 	margin: 1% auto;
+ 	top:12%;
+ 	width: 90.5%;
+ 	height: 70%;
+ 	overflow: hidden;
+ 	.content{width: 300%; position: absolute; height: 100%;top:0;left: 0}
+ 	.content li{
+ 		float: left;
+ 		overflow: hidden;
+ 		position: relative;
+ 		height: 100%;
+ 		width: 50%;
+		img{position: absolute;@include imgSize(40%,auto,2%);left: 12%}
+ 	}
+ 	.intro{
+ 		position: absolute;
+ 		width: 43%;height: 13%;left: 12%;top: 43%;background-color: #f7f7f7;
+ 		h2{font-size: 3.5vw; font-weight:bold;color:#00296c;}
+ 		p{font-size: 3vw;color:grey;}
+ 	}
+}
